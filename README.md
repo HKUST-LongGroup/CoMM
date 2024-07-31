@@ -12,7 +12,7 @@ CoMM is a high-quality dataset designed to improve the coherence, consistency, a
 
 
 # Dataset
-- Download the dataset from [Google Drive]((https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing)).
+- Download the dataset from [Google Drive](https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing).
 - Unzip the downloaded file and put three split data to `./datasets`.
 - Use the following command to download the images of the dataset:
 ```bash scripts/download_images.sh```
