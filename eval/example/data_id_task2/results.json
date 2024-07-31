@@ -1,0 +1,19 @@
+{
+    "model_input": "Here are step-by-step instructions without images about 10 DIY Indoor Gardens for the Urban Gardener: (1) Step1: ... (2) Step2: ... (3) Step3: ... (4) Step4: ... (5) Step5: ... According to the above steps, can you generate images for each step?",
+    "model_output": "(1) <IMAGE> (2) <IMAGE> (3) <IMAGE> (4) <IMAGE> (5) <IMAGE>",
+    "input_image_list": [],
+    "output_gt_image_list": [
+        "output_gt_1.jpg",
+        "output_gt_2.jpg",
+        "output_gt_3.jpg",
+        "output_gt_4.jpg",
+        "output_gt_5.jpg"
+    ],
+    "prediction_image_list": [
+        "predict_1.jpg",
+        "predict_2.jpg",
+        "predict_3.jpg",
+        "predict_4.jpg",
+        "predict_5.jpg"
+    ]
+}

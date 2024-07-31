@@ -1,0 +1,53 @@
+We are evaluating the results of a model designed for generating interleaved image-text documents. The model's input, starting with "INPUT:", can either be the beginning of a text-image interleaved document or a specified topic. Its output, starting with "OUTPUT:", will then be either a continuation of the document or content generated based on the given topic. The image with the index i will be enclosed by the symbols "<Img_i>" and "</Img_i>". The images are numbered sequentially from 0 to N (include the input images).
+As an expert in multimodal evaluation, your task is to assess the quality of the output that includes both images and text. The images are numbered sequentially from 1 to n (include the input images). Use the guidelines below to assign a final score.
+
+Scoring Guidelines:
+- 0-3: Major deficiencies, misalignment, or inconsistency
+- 4-7: Minor gaps, misalignment, or inconsistency
+- 8-10: Complete and thorough alignment, strong consistency
+
+Scoring Criteria:
+
+1. Image Coherence:
+   - Evaluate the consistency of style and entity between the output's images. Assess whether the trend shown by the image sequence aligns with the text. Finally, assign an overall consistency score to the image sequence.
+
+2. Image Qualtiy:
+   - Evaluate the quality of the output images based on the following aspects:
+       Realism: Determine whether the image resembles a real scene or object and identify any signs of artificial model-synthesis.
+       Completeness: Check if the objects in the image are fully intact, without any noticeable missing parts, truncation, or damage.
+       Clarity: Determine if the details are sufficient and if the image is free of blurriness or out-of-focus areas.
+       Composition balance: Evaluate the aesthetic quality and balance of the image composition, ensuring that the main subjects are well-framed and the composition is visually pleasing.
+
+Assume the index of the first image in the output is K.
+JSON Output Structure: 
+{
+    "scores": {
+        "Image_Coherence": {
+            "pair_scores": {
+                "image_K_and_K+1": {
+                    "justification": "Brief explanation of any gap",
+                    "style_consistency": 0-10,
+                    "entity_consistency": 0-10
+                },
+                "image_K+1_and_K+2": {
+                    "justification": "Brief explanation of any gap",
+                    "style_consistency": 0-10,
+                    "entity_consistency": 0-10
+                }
+            },
+            "overall_score": {
+                "style_consistency": 0-10,
+                "entity_consistency": 0-10,
+                "trend_consistency": 0-10,
+                "overall_consistency": 0-10,
+                "justification": "Brief explanation of overall consistency"
+            }
+        },
+        "Image_Quality":{
+            "Justification": "brief justification of any deficiencies in image quality",
+            "Score": 0-10
+        }
+    }
+}
+
+Data to Review: 

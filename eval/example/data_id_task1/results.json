@@ -1,0 +1,13 @@
+{
+    "model_input": "Here are step-by-step instructions images sequence about 10 DIY Indoor Gardens for the Urban Gardener: (1) <IMAGE> (2) <IMAGE> (3) <IMAGE> (4) <IMAGE> (5) <IMAGE> According to the above images, can you generate text for each step?",
+    "model_output": "(1) Step1: ... (2) Step2: ... (3) Step3: ... (4) Step4: ... (5) Step5: ...",
+    "input_image_list": [
+        "input_1.jpg",
+        "input_2.jpg",
+        "input_3.jpg",
+        "input_4.jpg",
+        "input_5.jpg"
+    ],
+    "output_gt_image_list": [],
+    "prediction_image_list": []
+}

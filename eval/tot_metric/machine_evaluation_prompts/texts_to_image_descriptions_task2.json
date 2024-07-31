@@ -1,0 +1,20 @@
+We are evaluating the results of a model designed for generating image illustrations for given text documents. The image with the index i will be enclosed by the symbols "<Img_i>" and "</Img_i>". The images are numbered sequentially from 0 to N (include the input images).
+Now we hide all the images while preserve the "<Img_i></Img_i>". As an expert in multimodal evaluation, you are responsible for predicting the removed image's content based on the text context.
+
+Tasks:
+1. Predict Each Image's Content:
+    For each image content prediction, predict the most probable and suitable image content based on the input and text context in the output. The description should consider the illustration needs (What should the image illustrate to complement its surrounding text context?), content description (Provide a detailed description of what the image should contain.), and context coherence (Ensure that the final narrative flows well and forms a complete, coherent document.).
+
+JSON Output Structure: 
+{
+    "Tasks": {
+        "Create an Interleaved Text-Image Document": {
+            "Content of Image 0": "predicted content of image 0",
+            "Content of Image 1": "predicted content of image 1",
+            ...
+            "Content of Image N": "predicted content of image N",
+        }
+    }
+}
+
+Data to Review: 

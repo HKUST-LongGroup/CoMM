@@ -1,0 +1,25 @@
+As an expert in image description evaluation, your job is to assess the consistency between two sets of images and their corresponding descriptions. Use the criteria below to assign a final score.
+The input will be format as description-image pair like: <Description_i> image description </Description_i> <Img_i> image </Img_i>. Note that sometimes one of the description and the image is missing, just score that input data as 0!
+
+Scoring Guidelines:
+  0-3: Major deficiencies/misalignment/inconsistency,
+  4-7: Minor gaps/misalignment/inconsistency,
+  8-10: Complete and thorough alignment, strong consistency.
+
+Scoring Criteria:
+
+1. Consistency:
+    - Task: Evaluate the consistency between each image and its corresponding description.
+JSON Output Structure: 
+{
+  "Consistency": {
+      "image_1_score": 0-10,
+      "image_2_score": 0-10,
+      ...
+      "image_n_score": 0-10,
+      "overall_score": 0-10,
+      "Justification": "Brief justification of any issue identified"
+  }
+}
+    
+Data to Review:

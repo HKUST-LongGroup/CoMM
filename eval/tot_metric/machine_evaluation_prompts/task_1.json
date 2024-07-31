@@ -1,0 +1,37 @@
+We are evaluating the results of a model designed for getting image sequence input and generating corresponding text output to form an interleaved image-text documents. 
+As an expert in multimodal evaluation, your task is to assess the quality of the generated text in the document. Follow the guidelines and criteria to score this output.
+
+Scoring Guidelines:
+- 0-3: Major deficiencies, misalignment, or inconsistency
+- 4-7: Minor gaps, misalignment, or inconsistency
+- 8-10: Complete and thorough alignment, strong consistency
+
+Scoring Criteria:
+
+1. Completeness:
+   - Summarize the document's topic and evaluate how thorough and comprehensive the output content is.
+       Evaluate Thoroughness and Comprehensiveness:
+         Is the text content complete? Is there anything missing?
+         Is the image content complete? Are any images missing?
+         Do the images and text fully support each other? Is there any missing image or text?
+
+2. Text Fidelity to Image:
+   - Evaluate the fidelity of the generated text context to the images and evaluate how the well the generated texts serve as the context of the image sequence.
+
+
+Assume the index of the first image in the output is K.
+JSON Output Structure: 
+{
+    "Completeness": {
+        "Summarize": "brief summary",
+        "Justification": "brief justification of any issue",
+        "Score": 0-10
+    },
+    "Text Fidelity to Image": {
+        "overall_score": 0-10,
+        "Justification": "Brief justification of any issue identified"
+    }
+
+}
+
+Data to Review: 
