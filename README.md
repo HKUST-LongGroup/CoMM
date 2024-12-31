@@ -53,12 +53,12 @@ python -u eval_metric.py --predict_results_path ${results_path} --model_type ${m
 python -u cal_gpt4o_score.py --predict_results_path ${results_path} --model_type ${model_type} --task_type task4
 ```
 
+# Training and Inference
+Please refer to [MiniGPT-5](./models/MiniGPT-5/README.md) and [SEED-Llama](./models/SEED/README.md) for the training and inference code.
 
 # TODO
 - [ ] Release the training and inference code
   - [ ] Emu2
-  - [ ] SEED
-  - [ ] MiniGPT5
 
 
 
