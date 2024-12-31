@@ -29,3 +29,6 @@ Use the following command to run inference:
 ```bash
 bash eval.sh MiniGPT5 best_model val_data.pth
 ```
+
+## Training
+bash train.sh
