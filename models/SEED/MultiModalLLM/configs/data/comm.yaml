@@ -1,0 +1,15 @@
+_target_: src.data.torchdata_sft.build_multi_datapipes
+_recursive_: False
+datapipes:
+
+  - _target_: src.data.torchdata_sft.build_wiki_datapipes_for_llm
+    data_dir: 
+      - data/CoMM
+    max_length: 2048
+    batch_size: 4
+    cycle_count: 50
+    reverse_ratio: 0.0
+    
+concat_type: 'only_one'
+sample_weights:
+  - 1

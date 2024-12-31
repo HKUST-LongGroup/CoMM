@@ -1,0 +1,5 @@
+_target_: models.model_tools.get_pretrained_llama_causal_model
+pretrained_model_name_or_path: ./MultiModalLLM/checkpoints/seed_8b_lora_comm/checkpoint-merged-10000 
+
+torch_dtype: fp16
+low_cpu_mem_usage: True
