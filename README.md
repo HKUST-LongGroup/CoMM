@@ -1,7 +1,8 @@
 # CoMM: A Coherent Interleaved Image-Text Dataset for Multimodal Understanding and Generation
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.10462-b31b1b.svg)](https://arxiv.org/abs/2406.10462)
-[![Static Badge](https://img.shields.io/badge/Dataset-GoogleDrive-yellow)](https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing)
+[![Static Badge](https://img.shields.io/badge/GoogleDrive-Dataset-blue)](https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing)
+[![Static Badge](https://img.shields.io/badge/Huggingface-Dataset-yellow)](https://huggingface.co/datasets/weisuxi/CoMM)
 
 CoMM is a high-quality dataset designed to improve the coherence, consistency, and alignment of multimodal content. It sources raw data from diverse origins, focusing on instructional content and visual storytelling to establish a strong foundation. 
 <img src="assets/data_compare.svg" width="800" alt="data comparison">
@@ -12,7 +13,7 @@ CoMM is a high-quality dataset designed to improve the coherence, consistency, a
 
 
 # Dataset
-- Download the dataset from [Google Drive](https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing).
+- Download the dataset from [Google Drive](https://drive.google.com/file/d/17AWa3wVCk4OZOdBQzDLRXsvRMnaXXP3T/view?usp=sharing) or [Huggingface](https://huggingface.co/datasets/weisuxi/CoMM).
 - Unzip the downloaded file and put three split data to `./datasets`.
 - Use the following command to download the images of the dataset:
 ```bash scripts/download_images.sh```
